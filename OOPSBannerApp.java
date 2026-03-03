@@ -1,28 +1,27 @@
 /**
- * OOPSBannerApp - UC4 Implementation
- * Prints "OOPS" banner using String array and loop.
+ * OOPSBannerApp - UC5
+ * Compact Array Initialization with String.join()
  *
  * @author Karthik
- * @version 4.0
+ * @version 5.0
  */
+
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        // Store each banner line in an array
+        // Combined declaration + initialization
         String[] banner = {
-
-            String.join("   ", " ***** ", " ***** ", " ******", " ***** "),
-            String.join("   ", "*     *", "*     *", "*     *", "*     *"),
-            String.join("   ", "*     *", "*     *", "*     *", "*      "),
-            String.join("   ", "*     *", "*     *", "****** ", " ***** "),
-            String.join("   ", "*     *", "*     *", "*      ", "      *"),
-            String.join("   ", "*     *", "*     *", "*      ", "*     *"),
-            String.join("   ", " ***** ", " ***** ", "*      ", " ***** ")
-
+                String.join("   ", " ***** ", " ***** ", " ******", " ***** "),
+                String.join("   ", "*     *", "*     *", "*     *", "*     *"),
+                String.join("   ", "*     *", "*     *", "*     *", "*      "),
+                String.join("   ", "*     *", "*     *", "****** ", " ***** "),
+                String.join("   ", "*     *", "*     *", "*      ", "      *"),
+                String.join("   ", "*     *", "*     *", "*      ", "*     *"),
+                String.join("   ", " ***** ", " ***** ", "*      ", " ***** ")
         };
 
-        // Print using enhanced for-loop
+        // Enhanced for-loop
         for (String line : banner) {
             System.out.println(line);
         }
